@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.travelguru.com/
+host: https://www.travelguru.com
+note: >-
+  Every path on www.travelguru.com (including the site root) returns a 301 redirect
+  to https://www.yatra.com/ — the Travelguru brand was acquired by Yatra Online
+  (100% stake, July 2012) and the domain is now a redirect shell served by Akamai.
+  The apex travelguru.com returns 308 to www.travelguru.com. The related hotel
+  extranet www.travelpartnerweb.com also 301-redirects to https://www.yatra.com/,
+  and the former B2B distribution host desiya.com did not respond (connection
+  failure). No well-known documents are published on the Travelguru host.
+documents:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /.well-known/openid-configuration
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /llms.txt
+    status: 301
+    redirect: https://www.yatra.com/
+  - path: /robots.txt
+    status: 301
+    redirect: https://www.yatra.com/
+related_hosts:
+  - host: https://www.travelpartnerweb.com/
+    status: 301
+    redirect: https://www.yatra.com/
+  - host: https://desiya.com/
+    status: unreachable
+  - host: https://www.desiya.com/
+    status: unreachable

@@ -1,8 +1,25 @@
 aid: travelguru
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/travelguru.png
 name: Travelguru
-description: Travelguru is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Travelguru was an Indian online hotel-booking brand that grew into one of India's
+  larger hotel-distribution platforms before Yatra.com acquired a 100% stake in July
+  2012. The brand has since been folded into Yatra: travelguru.com and the Travel
+  Partner Web hotel extranet now redirect to yatra.com, the former Desiya B2B
+  distribution host is offline, and Travelguru publishes no standalone developer
+  portal or public API surface today. It is tracked in the API Evangelist network
+  as a Battery Ventures portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/travelguru/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +27,35 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: yatra
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Hotels
+- Booking
+- India
+- Online Travel Agency
 apis: []
+common:
+- type: DomainSecurity
+  url: security/travelguru-domain-security.yml
+- type: Website
+  url: https://www.travelguru.com/
+- type: WellKnown
+  url: well-known/travelguru-well-known.yml
+- type: LLMsTxt
+  url: llms/travelguru-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
